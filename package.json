@@ -1,0 +1,15 @@
+{
+  "name": "nodejs-initial",
+  "version": "1.0.0",
+  "description": "Already to set-up some tools help the dev prgress",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/huynhthetong/NodeJS-Initial"
+  },
+  "author": "Stephen-Bill",
+  "license": "MIT",
+  "dependencies": {
+    "prettier": "^1.19.1"
+  }
+}
