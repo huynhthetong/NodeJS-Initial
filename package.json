@@ -10,6 +10,8 @@
   "author": "Stephen-Bill",
   "license": "MIT",
   "dependencies": {
+    "commander": "^4.1.0",
+    "inquirer": "^7.0.3",
     "prettier": "^1.19.1"
   }
 }
