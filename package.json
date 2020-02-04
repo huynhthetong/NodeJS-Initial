@@ -10,6 +10,7 @@
   "author": "Stephen-Bill",
   "license": "MIT",
   "dependencies": {
+    "mime": "^2.4.4",
     "prettier": "^1.19.1"
   }
 }
