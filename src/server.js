@@ -17,13 +17,19 @@ const app = express()
 const PORT = 3001
 
 app.get('/', (req, res) => {
-  res.sendfile(path.dirname + '/public/index.html', err => {
+  // fs.readFile(__dirname + '/public/index.html', (err, buffer) => {
+  //   if (err) res.status(500).send(err)
+  //   const html = buffer.toString()
+  //   res.setHeader('Content-Type', 'text/html')
+  //   res.send(html)
+  // })
+  res.sendFile(__dirname + '/public/index.html', err => {
     if (err) res.status(500).send(err)
   })
 })
 
 app.get('/data', (req, res) => {
-  res.json()
+  res.json(jsonData)
 })
 
 app.listen(PORT, () => console.log(`Listening on port ${PORT} ...`))
