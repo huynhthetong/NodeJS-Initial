@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Already to set-up some tools help the dev prgress",
   "main": "server.js",
+  "scripts": {
+    "start": "nodemon server/server.js"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/huynhthetong/NodeJS-Initial"
@@ -15,6 +18,7 @@
   "devDependencies": {
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
+    "lodash": "^4.17.15",
     "nodemon": "^2.0.2"
   }
 }
