@@ -66,6 +66,18 @@ app.put('/lions/:id', (req, res) => {
   }
 })
 
+app.delete('/lions/:id', (req, res) => {
+  var lion = _.find(lions, { id: req.params.id })
+
+  if (!lions[lion]) {
+    res.send()
+  } else {
+    var deletedLion = lions[lion]
+    lions.splice(lion, 1)
+    res.json(deletedLion)
+  }
+})
+
 // Middle ware error handler
 app.use((err, req, res, next) => {
   if (err) res.status(500).send(err)
