@@ -55,6 +55,17 @@ lionRouter
       res.json(updatedLion)
     }
   })
+  .delete((req, res) => {
+    var lion = _.find(lions, { id: req.params.id })
+
+    if (!lions[lion]) {
+      res.send()
+    } else {
+      var deletedLion = lions[lion]
+      lions.splice(lion, 1)
+      res.json(deletedLion)
+    }
+  })
 //Note code not optimize
 // lionRouter.get('/', function(req, res) {
 //   res.json(lions)
@@ -85,6 +96,18 @@ lionRouter
 //   } else {
 //     var updatedLion = _.assign(lions[lion], update)
 //     res.json(updatedLion)
+//   }
+// })
+
+// app.delete('/:id', (req, res) => {
+//   var lion = _.find(lions, { id: req.params.id })
+
+//   if (!lions[lion]) {
+//     res.send()
+//   } else {
+//     var deletedLion = lions[lion]
+//     lions.splice(lion, 1)
+//     res.json(deletedLion)
 //   }
 // })
 
