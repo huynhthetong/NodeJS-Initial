@@ -1,4 +1,4 @@
-var _ = require('lodash');
+var _ = require('lodash')
 
 // deafult config object for our api
 var config = {
@@ -6,13 +6,13 @@ var config = {
   dev: 'development',
   test: 'testing',
   prod: 'production',
-  port: process.env.PORT || 3000
-};
+  port: process.env.PORT || 3000,
+}
 
 // check to see if the NODE_ENV was set, if not, the set it to dev
-process.env.NODE_ENV = process.env.NODE_ENV || config.dev;
+process.env.NODE_ENV = process.env.NODE_ENV || config.dev
 // set config.env to whatever the NODE_ENV is
-config.env = process.env.NODE_ENV;
+config.env = process.env.NODE_ENV
 // TODO
 // envConfig is nothing right now, but it should be an object.
 // depending on what ever config.env is, load up the appropriate file
@@ -21,7 +21,6 @@ config.env = process.env.NODE_ENV;
 // conditionally load in another config file depending on what
 // env we are in. We then merge those objects with the env config overriting
 // the default config if here. We then export that new object for our app to use
-var envConfig;
+var envConfig
 
-module.exports = _.merge(config, envConfig);
-© 2020 GitHub, Inc.
+module.exports = _.merge(config, envConfig)
