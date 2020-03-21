@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Already to set-up some tools help the dev prgress",
   "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/huynhthetong/NodeJS-Initial"
@@ -14,8 +17,10 @@
   },
   "devDependencies": {
     "body-parser": "^1.19.0",
+    "colors": "^1.4.0",
     "express": "^4.17.1",
     "lodash": "^4.17.15",
-    "morgan": "^1.9.1"
+    "morgan": "^1.9.1",
+    "nodemon": "^2.0.2"
   }
 }
